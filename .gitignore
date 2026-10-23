@@ -1,0 +1,29 @@
+# Archivos que git NO debe guardar (aplica a backend/ y frontend/)
+
+# Librerías descargadas (se recuperan con npm install)
+node_modules/
+
+# Código compilado (se genera con npm run build)
+dist/
+build/
+*.tsbuildinfo
+
+# Variables de entorno: contienen contraseñas, ¡nunca se suben!
+.env
+.env.*.local
+.env.local
+
+# Pruebas
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
